@@ -1,0 +1,30 @@
+#include <stdio.h > 
+
+int main() {
+	int total = 0;
+	int num;
+
+	// Infinite loop that runs until explicitly stopped by break
+	while (1) 
+	{
+		printf("Enter your number: ");
+		scanf_s("%d", &num);
+
+		// If user enters 0 or a negative number, break out of the loop
+		if (num <= 0)
+		{
+			break;
+		}
+		else
+		{
+			// Add the positive number to total
+			total = total + num;
+		}
+	
+
+	}
+	// Print the final total from outside the loop
+	printf("%d\n", total);
+
+	return 0;
+}
