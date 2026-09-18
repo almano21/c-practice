@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+	//Create variables
+	int penNumber = 14;
+	int studentNumber = 3;
+
+	//Calculate and print the number of pens each student will get
+	int pensPerStudent = penNumber / studentNumber;
+	printf("Each student gets %d pens\n", pensPerStudent);
+
+	//Calculate and print the number of pens that will be left
+	int leftPens = penNumber % studentNumber;
+	printf("%d pens are left\n", leftPens);
+
+	return 0;
+}
