@@ -1,0 +1,21 @@
+#include <stdio.h > 
+
+int main() 
+{
+	int number;
+
+	//get integer input from the user
+	printf("Enter your number: ");
+	scanf_s("%d", &number);
+
+	//check if the nummber is even or odd
+	if (number % 2 == 0) 
+	{
+		printf("even");
+	}
+	else 
+	{
+		printf("odd");
+	}
+  return 0;
+}
