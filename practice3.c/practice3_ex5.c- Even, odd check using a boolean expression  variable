@@ -1,0 +1,23 @@
+#include <stdio.h > 
+
+int main() {
+	int number;
+
+	//get integer input
+	printf("Enter your number: ");
+	scanf_s("%d", &number);
+
+	// Boolean expression: returns 1 (true) if even, 0 (false) if odd
+	int result = (number % 2 == 0);
+
+	// Print based on the boolean result
+	if (result) {
+		printf("%d is even", number);
+	}
+	else {
+		printf("%d is odd", number);
+	}
+
+
+	return 0;
+}
