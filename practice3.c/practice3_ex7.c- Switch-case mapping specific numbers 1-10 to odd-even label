@@ -1,0 +1,53 @@
+#include <stdio.h > 
+
+int main() {
+	int number;
+
+	//get integer from the user
+	printf("Enter your number: ");
+	scanf_s("%d", &number);
+  
+	switch (number) {
+		//cases to find odd number
+	case 1:
+		printf("Odd Number");
+		break;
+	case 3:
+		printf("Odd Number");
+		break;
+	case 5:
+		printf("Odd Number");
+		break;
+	case 7:
+		printf("Odd Number");
+		break;
+	case 9:
+		printf("Odd Number");
+		break;
+
+	//cases to find even number 
+	case 2:
+		printf("Even number");
+		break;
+	case 4:
+		printf("Even number");
+		break;
+	case 6:
+		printf("Even number");
+		break;
+	case 8:
+		printf("Even number");
+		break;
+	case 10:
+		printf("Even number");
+		break;
+   
+	default:
+		printf("Invalid Number");
+
+
+	}
+
+
+	return 0;
+}
