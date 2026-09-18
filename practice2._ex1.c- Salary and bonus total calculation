@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+   double salary;
+   double bonus;
+   double income;
+
+
+   //Take input for salary
+       printf("Enter your salary: ");
+       scanf_s("%lf", &salary);
+
+       //Take input for bonus
+       printf("Enter your bonus: ");
+       scanf_s("%lf", &bonus);
+
+       //Add salary and bonus and store in income
+       income = salary + bonus;
+
+     //Print income
+       printf("Total Income: %.2lf", income);
+
+    return 0;
+
+
+}
