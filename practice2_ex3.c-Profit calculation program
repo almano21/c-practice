@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+	//Create variables 
+	int costPrice = 19;
+	int sellingPrice = 27;
+	int profit;
+
+	//Calculate the profit
+	profit = sellingPrice - costPrice;
+
+	//Print the result
+	printf("This is your profit: %d\n", profit);
+
+	return 0;
+
+}
