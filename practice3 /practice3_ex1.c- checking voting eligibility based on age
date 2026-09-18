@@ -1,0 +1,15 @@
+#include <stdio.h > 
+int main() {
+
+	// Prompt user and get integer input
+	int age; 
+	printf("Enter your age: ");
+	scanf_s("%d", &age);
+
+	// Check voting eligibility
+	if (age >= 18)
+	{
+		printf("The person can vote.");
+	}
+	return 0;
+}
