@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+	//Create variables
+	double celsius;
+	double fahrenheit;
+
+	//Take temperature in degree celsius 
+	printf("Enter the temperature in Celsius: ");
+	scanf_s("%lf", &celsius);
+
+	//Covert celsius to hahrenheit
+	fahrenheit = (celsius * 1.8) + 32;
+
+	//Print the temperature in fahrenheit
+	printf("This is the temperature in Fahrenheit: %.2f\n", fahrenheit);
+
+	return 0;
+
+
+}
