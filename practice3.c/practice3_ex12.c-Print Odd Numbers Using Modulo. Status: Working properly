@@ -1,0 +1,18 @@
+#include <stdio.h > 
+
+int main() {
+	//take input value for n
+	int n;
+	printf("Enter your number: ");
+	scanf_s("%d", &n);
+
+	//iterate from i = 1 to n
+	for (int i = 1; i <= n; i = i + 1) {
+		//checks if i is odd
+		if (i % 2 != 0) {  
+			printf("%d\n", i);
+		}
+	}
+
+	return 0;
+}
