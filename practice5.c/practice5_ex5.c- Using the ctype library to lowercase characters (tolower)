@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+	//get character input
+	char alphabet;
+	scanf_s("%c", &alphabet);
+
+	//convert alphabet to lowercase
+	char lower = tolower(alphabet);
+
+	//print the character
+	printf("%c", lower);
+
+	return 0;
+
+}
