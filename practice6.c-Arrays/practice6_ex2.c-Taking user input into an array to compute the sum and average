@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+
+	double numbers[5];
+	
+	// get array input
+	for (int i = 0; i < 5; ++i) {
+		scanf_s("%lf", &numbers[i]);
+		
+	}
+
+	// sum of all elements
+	double sum = 0.0;
+	for (int i = 0; i < 5; ++i) {
+		sum = sum + numbers[i];
+
+	}
+	// average of all elements
+	double average = sum / 5;
+	printf("%.2lf", average);
+
+
+
+	return 0;
+}
