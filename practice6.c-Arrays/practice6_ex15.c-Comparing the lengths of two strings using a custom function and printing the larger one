@@ -1,0 +1,38 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+
+// function to find  the length
+int findLength(char text[100]) {
+
+	int count = 0;
+
+	// loop to access each character of a string
+	while (text[count] != '\0') {
+		count = count + 1;
+
+	}
+	return count;
+
+}
+
+int main() {
+	char text1[100];
+	char text2[100];
+
+	// get string inputs
+	scanf("%s", &text1);
+	scanf("%s", &text2);
+
+// find the length of two strings, compare, 
+// and print the string with the larger length
+	if (findLength(text1) > findLength(text2)){
+      printf("%s", text1);
+
+	}
+	else {
+		printf("%s", text2);
+	}
+
+	return 0;
+}
