@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+
+char movie[] = "Snowpiercer";
+
+//print 4th character
+printf("%c", movie[3]);
+
+
+   return 0;
+}
