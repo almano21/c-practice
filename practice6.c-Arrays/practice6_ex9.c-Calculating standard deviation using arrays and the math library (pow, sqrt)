@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <math.h>
+
+//function to compute standard deviation
+double calculateSD(double data[]) {
+	double sum = 0.0;
+	
+	//find the sum of all the array elements
+		for (int i = 0; i < 5; ++i) {
+			sum = sum + data[i];
+			
+		}
+		//compute the mean
+		double mean = sum / 5;
+        double result = 0.0;
+
+     //compute the square of each 
+	// add all the squered difference
+		for (int i = 0; i < 5; ++i) {
+       double difference = data[i] - mean;
+	   result = result +  pow(difference, 2);
+
+		}
+		
+		//compute variance and the standard deviation
+		 double variance = result / 5.0;
+         double sd = sqrt(variance);
+		 return sd;
+}
+
+int main() {
+
+	//get input array elements
+	double numArray[5];
+	for (int i = 0; i < 5; ++i) {
+     scanf_s("%lf", &numArray[i]);
+      
+	}
+	//calling function
+	double sd = calculateSD(numArray);
+
+	printf("%.3lf", sd);
+	
+
+	return 0;
+}
+
