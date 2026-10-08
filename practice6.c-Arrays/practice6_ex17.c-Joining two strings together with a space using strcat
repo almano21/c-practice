@@ -1,0 +1,25 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	char text1[100];
+	char text2[100];
+
+	// gets string inputs
+	scanf("%s", &text1);
+	scanf(" %s", &text2);
+
+	// joins two strings using strcat
+	strcat(text1," ");
+	strcat(text1, text2);
+
+	// prints joined string
+	printf("%s", text1);
+
+	return 0;
+}
+
+
+
+
