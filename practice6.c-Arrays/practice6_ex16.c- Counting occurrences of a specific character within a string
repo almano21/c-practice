@@ -1,0 +1,33 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+
+	// take the string input
+	char str[100];
+	fgets(str, sizeof(str), stdin);
+
+	// take character inpt
+	char ch;
+	scanf("%c", &ch);
+
+	int count = 0;
+
+	//find the length of string
+	int length = strlen(str);
+
+	// loop to access each character of string
+	for (int i = 0; i < length; ++i){ 
+		// compare each character with ch character and 
+		// if both are equal, increase the value of count
+		if (str[i] == ch) {
+			count = count + 1;
+		}
+
+	}
+
+	printf("%d", count);
+
+	return 0;
+}
