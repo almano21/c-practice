@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+//function to take double arguments
+void addNumbers(double n1, double n2) {
+	double sum = n1 + n2;
+	printf("%.2f", sum);
+}
+
+int main() {
+	double number1;
+	double number2;
+	scanf_s("%lf %lf", &number1, &number2);
+	addNumbers(number1, number2);
+
+	return 0;
+}
