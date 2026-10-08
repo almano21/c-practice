@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	char text[100];
+
+	//get input value for text
+	fgets(text, sizeof(text), stdin);
+
+	//variable to count number of vowels
+	int vowels = 0;
+
+	// loop to access each character of text 
+	// and check if a character at its position is a vowel (lowercase or uppercase)
+	for (int i = 0; text[i] != '\0'; ++i) {
+		if (text[i] == 'a' || text[i] == 'e' || text[i] == 'i' ||
+			text[i] == 'o' || text[i] == 'u' || text[i] == 'A' ||
+			text[i] == 'E' || text[i] == 'I' || text[i] == 'O' || text[i] == 'U') {
+
+			vowels = vowels + 1;
+		}
+
+	}
+
+	// print the value of vowel
+	printf("%d", vowels);
+
+
+	return 0;
+}
