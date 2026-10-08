@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+	char text[100];
+
+	// get input string
+	fgets(text, sizeof(text), stdin);
+
+	// variable to count number of characters
+	int count = 0;
+
+	// while loop to count characters in a string
+	while (text[count] != '\0') {
+		count = count + 1;
+		
+	}
+
+	printf("%d", count);
+
+	return 0;
+}
