@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+// function to find product and return it
+int findProduct(int n1, int n2) {
+	int product = n1 * n2;
+	return product;
+}
+
+int main() {
+	int ages[4] = { 4, 9, 2, 7 };
+
+	// Calling function and printing result
+	int result = findProduct(ages[0], ages[3]);
+	printf("%d", result);
+
+
+	return 0;
+}
