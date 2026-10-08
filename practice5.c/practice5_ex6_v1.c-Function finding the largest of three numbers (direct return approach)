@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+//function to find the largest number among three
+int getLargestNumber(int n1, int n2, int n3) {
+	//return n1 if it's the largest number 
+	if (n1 >= n2 && n1 >= n3) {
+		return n1;
+	}
+	//return n2 if it's the largest number
+	else if (n2 >= n1 && n2 >= n3) {
+		return n2;
+
+	}
+	else {
+		return n3;
+	}
+}
+
+int main() {
+	int largestNumber = getLargestNumber(54, -78, 28);
+	printf("%d\n", largestNumber);
+
+	largestNumber = getLargestNumber(0, 11, 21);
+	printf("%d\n", largestNumber);
+
+	return 0;
+}
