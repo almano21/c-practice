@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+	//get input for num
+	int num;
+	scanf_s("%d", &num);
+
+	//find the cube root and print it
+	double result = cbrt(num);
+	printf("%.2f", result);
+
+	return 0;
+
+}
