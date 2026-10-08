@@ -1,0 +1,16 @@
+#include <stdio.h> 
+
+//function definition
+void printNumbers() {
+
+	printf("%d\n", 5);
+	printf("%d\n", 100);
+}
+
+int main() {
+	//call function twice
+	printNumbers();
+	printNumbers();
+
+	return 0;
+}
