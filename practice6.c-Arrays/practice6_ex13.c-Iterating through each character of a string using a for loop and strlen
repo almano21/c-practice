@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	char text[] = "Life is fun";
+
+	//for loop to iterate through each character
+	for (int i = 0; i < strlen(text) ; ++i) {
+		printf("%c", text[i]);
+	}
+
+	return 0;
+}
+
