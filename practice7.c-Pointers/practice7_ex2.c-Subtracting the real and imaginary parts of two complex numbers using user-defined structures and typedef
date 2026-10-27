@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+// struct creation
+typedef struct Complex {
+	double real;
+	double imag;
+	
+
+}complex;
+
+int main() {
+	//struct variables
+	complex c1, c2, result;
+
+	//get real and imag input for c1 and c2
+	scanf_s("%lf", &c1.real);
+	scanf_s("%lf", &c1.imag);
+
+	scanf_s("%lf", &c2.real);
+	scanf_s("%lf", &c2.imag);
+
+	//substract real and imaginary parts
+	result.real = c1.real - c2.real;
+	result.imag = c1.imag - c2.imag;
+
+	printf("%.2lf + %.2lfi", result.real, result.imag);
+
+
+	return 0;
+}
