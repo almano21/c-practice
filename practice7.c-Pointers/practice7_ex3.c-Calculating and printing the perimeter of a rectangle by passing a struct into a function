@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+struct Rectangle {
+	int length;
+	int breadth;
+};
+
+// function to find perimeter
+void findPerimeter(struct Rectangle r) {
+
+	int perimeter = 2 * (r.length + r.breadth);
+	printf("%d", perimeter);
+}
+
+int main() {
+	// struct variable
+	struct Rectangle rect1;
+
+	//input for the value of length and breadth of rect
+	scanf_s("%d %d", &rect1.length, &rect1.breadth);
+
+	//function call
+	findPerimeter(rect1);
+
+	return 0;
+
+}
