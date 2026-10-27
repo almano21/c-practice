@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+//Employee struct
+struct Employee {
+	int age;
+	char name[50];
+};
+
+int main() {
+	struct Employee employee1;
+
+	//get age and name inputs for employee1
+	scanf_s("%d\n", &employee1.age);
+    fgets(employee1.name, sizeof(employee1.name), stdin);
+
+	//print name and age using employee1
+	printf("%s", employee1.name);
+	printf("%d", employee1.age);
+
+
+	return 0;
+}
